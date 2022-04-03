@@ -26,18 +26,20 @@ ul {
   list-style: none;
 }
 
+body {
+  background-image: url(image/background04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: whitesmoke;
 }
 
-body {
-  background-image: url(image/background03.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serif;
-}
 /* 
 body::after {
   content: '';
@@ -56,7 +58,7 @@ body::after {
 
 .wrapper {
   width: 700px;
-  margin: 40px auto;
+  margin: 60px auto;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -66,7 +68,7 @@ body::after {
 
 .profile__title {
   text-align: center;
-  background-image: url(image/background02.avif);
+  background-image: url(image/night-sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
@@ -132,4 +134,21 @@ body::after {
   padding: 10px;
   font-size: 40px;
   text-align: center;
+}
+
+@media screen and (max-width: 48rem) {
+  img {
+    width: 100%;
+  }
+  .wrapper {
+    max-width: 90%;
+  }
+
+  .profile__name {
+    font-size: 32px;
+  }
+
+  .profile__job {
+    font-size: 18px;
+  }
 }
